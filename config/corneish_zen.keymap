@@ -30,10 +30,10 @@
                 default_layer {
                         label = "DEFAULT";
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  F  |    P    |    B    |   |    J    |    L     |   U   |  Y  |  '  |
-// |  A  |  R  |  S  |    T    |    G    |   |    M    |    N     |   E   |  I  |  O  |
-// |  Z  |  X  |  C  |    D    |    V    |   |    K    |    H     |   ,   |  .  |  -  |
-//             | GUI |ESC/Mouse| SPC/Move|   | ENT/Num | Bspc/Sym | Normal|
+// |  Q  |  W  |  F   |    P    |    B    |   |    J    |    L     |   U   |  Y  |  '  |
+// |  A  |R/Alt|S/Ctrl| T/Shift |    G    |   |    M    |    N     |   E   |  I  |  O  |
+// |  Z  |  X  |  C   |    D    |    V    |   |    K    |    H     |   ,   |  .  |  -  |
+//             | GUI  |ESC/Mouse| SPC/Move|   | ENT/Num | Bspc/Sym | Normal|
                         bindings = <
    &kp Q &kp W      &kp F       &kp P        &kp B         &kp J     &kp L         &kp U       &kp Y        &kp SQT
    &kp A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp G         &kp M     &mt LSHIFT N  &mt LCTRL E &mt LALT I   &kp O
@@ -45,9 +45,9 @@
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
 // |  [  |  7  |  8  |  9  |  ]  |   |     |     |     |     |     |
-// |  ;  |  4  |  5  |  6  |  =  |   |     |     |     |     |     |
+// |  ;  |  4  |  5  |  6  |  =  |   |     |Shift| Ctrl| Alt |     |
 // |  <  |  1  |  2  |  3  |  >  |   |     |     |     |     |     |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//             |  .  |  0  |  -  |   | ENT |     |    |
                         bindings = <
    &kp LBKT &kp N7  &kp N8  &kp N9 &kp RBKT       &trans   &trans    &trans   &trans  &trans
    &trans   &kp N4  &kp N5  &kp N6 &kp EQUAL      &trans   &kp LSHIFT &kp LCTRL &kp LALT &trans
@@ -95,7 +95,7 @@
    &kp Q &kp W  &kp F         &kp P       &kp B         &kp J     &kp L         &kp U       &kp Y        &kp SQT
    &kp A &kp R  &kp S         &kp T       &kp G         &kp M     &mt LSHIFT N  &mt LCTRL E &mt LALT I   &kp O
    &kp Z &kp X  &kp C         &kp D       &kp V         &kp K     &kp H         &kp COMMA   &kp DOT      &kp MINUS
-                &mt LCTRL ESC &kp LSHIFT  &kp SPACE     &lt 1 RET &lt 2 BSPC    &to 1
+                &mt LCTRL ESC &kp LSHIFT  &kp SPACE     &lt 1 RET &lt 2 BSPC    &to 0
                         >;
                 };
         };
