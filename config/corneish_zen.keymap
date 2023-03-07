@@ -38,7 +38,7 @@
    &kp Q &kp W      &kp F       &kp P        &kp B         &kp J     &kp L         &kp U       &kp Y        &kp SQT
    &kp A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp G         &kp M     &mt LSHIFT N  &mt LCTRL E &mt LALT I   &kp O
    &kp Z &kp X      &kp C       &kp D        &kp V         &kp K     &kp H         &kp COMMA   &kp DOT      &kp MINUS
-                    &kp LGUI    &lt 4 ESC    &lt 3 SPACE   &lt 1 RET &lt 2 BSPC    &to 5
+                    &kp LGUI    &lt 4 ESC    &lt 3 SPACE   &lt 1 RET &lt 2 BSPC    &to STOCK
                         >;
                 };
                 number_layer {
@@ -84,6 +84,20 @@
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
+                movement_layer {
+                        label = "MOVEMENT";
+// -----------------------------------------------------------------------------------------
+// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
+// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
+// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
+   &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH
+   &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                        >;
+                };
                 stock_layer {
                         label = "STOCK";
 // -----------------------------------------------------------------------------------------
@@ -95,7 +109,7 @@
    &kp Q &kp W  &kp F         &kp P       &kp B         &kp J     &kp L         &kp U       &kp Y        &kp SQT
    &kp A &kp R  &kp S         &kp T       &kp G         &kp M     &mt LSHIFT N  &mt LCTRL E &mt LALT I   &kp O
    &kp Z &kp X  &kp C         &kp D       &kp V         &kp K     &kp H         &kp COMMA   &kp DOT      &kp MINUS
-                &mt LCTRL ESC &kp LSHIFT  &kp SPACE     &lt 1 RET &lt 2 BSPC    &to 0
+                &mt LCTRL ESC &kp LSHIFT  &kp SPACE     &lt 1 RET &lt 2 BSPC    &to DEFAULT
                         >;
                 };
         };
