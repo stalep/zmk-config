@@ -38,7 +38,7 @@
    &kp Q &kp W      &kp F       &kp P        &kp B         &kp J     &kp L         &kp U       &kp Y        &kp SQT
    &kp A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp G         &kp M     &mt LSHIFT N  &mt LCTRL E &mt LALT I   &kp O
    &kp Z &kp X      &kp C       &kp D        &kp V         &kp K     &kp H         &kp COMMA   &kp DOT      &kp MINUS
-                    &kp LGUI    &lt 4 ESC    &lt 3 SPACE   &lt 1 RET &lt 2 BSPC    &tog 5
+                    &kp LGUI    &lt 4 ESC    &lt 3 SPACE   &lt 1 RET &lt 2 BSPC    &to 5
                         >;
                 };
                 number_layer {
@@ -95,7 +95,7 @@
    &kp Q &kp W  &kp F         &kp P       &kp B         &kp J     &kp L         &kp U       &kp Y        &kp SQT
    &kp A &kp R  &kp S         &kp T       &kp G         &kp M     &mt LSHIFT N  &mt LCTRL E &mt LALT I   &kp O
    &kp Z &kp X  &kp C         &kp D       &kp V         &kp K     &kp H         &kp COMMA   &kp DOT      &kp MINUS
-                &mt LCTRL ESC &kp LSHIFT  &kp SPACE     &lt 1 RET &lt 2 BSPC    &tog 1
+                &mt LCTRL ESC &kp LSHIFT  &kp SPACE     &lt 1 RET &lt 2 BSPC    &to 1
                         >;
                 };
         };
