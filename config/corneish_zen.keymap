@@ -57,6 +57,19 @@
 };
 
 / {
+
+    combos {
+        compatible = "zmk,combos";
+
+        combo_slash {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp LS(N7)>;
+            layers = <DEFAULT STOCK>;
+        };
+
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -68,7 +81,7 @@
 // |  Z  |  X  |  C   |    D    |    V    |   |    K    |    H     |   ,   |  .  |  ?  |
 //             | GUI  |ESC/Mouse| SPC/Move|   | ENT/Num | Bspc/Sym | Normal|
                         bindings = <
-   &kp Q &kp W      &kp F       &kp P        &kp B         &kp J     &kp L         &kp U       &kp Y        &kp SQT
+   &kp Q &kp W      &kp F       &kp P        &kp B         &kp J     &kp L         &kp U       &kp Y        &kp NUHS
    &kp A &gqt LALT R &gqt LCTRL S &gqt LSHIFT T &kp G         &kp M     &gqt LSHIFT N  &gqt LCTRL E &gqt LALT I   &kp O
    &kp Z &kp X      &kp C       &kp D        &kp V         &kp K     &kp H         &kp COMMA   &kp DOT      &kp LS(MINUS)
                     &kp LGUI    &lt 3 ESC    &lt 4 SPACE   &lt 1 RET &lt 2 BSPC    &to STOCK
@@ -139,10 +152,10 @@
 // |  Z  |  X  |  C  |    D    |    V    |   |    K    |    H     |   ,   |  .  |  -  |
 //             | GUI |ESC/Mouse| SPC/Move|   | ENT/Num | Bspc/Sym | Normal|
                         bindings = <
-   &kp Q &kp W  &kp F         &kp P       &kp B         &kp J     &kp L         &kp U       &kp Y        &kp SQT
-   &kp A &kp R  &kp S         &kp T       &kp G         &kp M     &mt LSHIFT N  &mt LCTRL E &mt LALT I   &kp O
-   &kp Z &kp X  &kp C         &kp D       &kp V         &kp K     &kp H         &kp COMMA   &kp DOT      &kp MINUS
-                &mt LCTRL ESC &kp LSHIFT  &kp SPACE     &lt 1 RET &lt 2 BSPC    &to DEFAULT
+   &kp Q &kp W  &kp F         &kp P       &kp B         &kp J     &kp L       &kp U       &kp Y    &kp NUHS
+   &kp A &kp R  &kp S         &kp T       &kp G         &kp M     &kp N       &kp E       &kp I    &kp O
+   &kp Z &kp X  &kp C         &kp D       &kp V         &kp K     &kp H       &kp COMMA   &kp DOT  &kp MINUS
+                &mt LCTRL ESC &kp LSHIFT  &kp SPACE     &lt 1 RET &lt 2 BSPC  &to DEFAULT
                         >;
                 };
         };
